@@ -1,5 +1,5 @@
-# Nexus-L1
-# 🧩Nexus Prover Node
+# 🧩Nexus-L1
+# Nexus Prover Node
 You earn NEX Points by contributing compute and interacting with the Nexus ecosystem.
 
 ---
