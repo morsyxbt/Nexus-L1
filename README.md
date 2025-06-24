@@ -130,4 +130,4 @@ htop
 
 ---
 
-## **Made with ❤️ by Morsyxbt
+## **Made with ❤️ by Morsyxbt**
