@@ -72,7 +72,7 @@ rustc --version
 
 <div align="center">
 
-#  Run Your Prover via CLI (Install via Script) 🍥
+#  Run Your Prover via CLI (Install via Script)
 
 </div>
 
@@ -103,13 +103,13 @@ source ~/.bashrc
 nexus-network start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
 
 
 
 <div align="center">
 
-#  Run Your Prover via CLI (Build from source) 🍥
+#  Run Your Prover via CLI (Build from source)
 
 </div>
 
@@ -154,15 +154,9 @@ source ~/.bashrc
 cargo run -r -- start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
 
-
-
-
-![image](https://github.com/user-attachments/assets/a2c9bb37-e72b-4c42-8d7a-14554de938e5)
-
-
-Here we go: You have succussfully run your Nexus prover node🚀😙
+You have succussfully run your Nexus prover node
 
 
 # Detach & Attach from screen
@@ -195,6 +189,6 @@ free -h
 nexus-network start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
 
 ## **Made with ❤️ by Morsyxbt**
