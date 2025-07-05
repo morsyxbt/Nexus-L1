@@ -103,7 +103,7 @@ source ~/.bashrc
 nexus-network start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id
 
 
 
@@ -154,7 +154,7 @@ source ~/.bashrc
 cargo run -r -- start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id
 
 You have succussfully run your Nexus prover node
 
@@ -189,6 +189,6 @@ free -h
 nexus-network start --node-id <your-node-id>
 ```
 
-Replace `<your-node-id>` with your actual node id from [Get your node ID](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+Replace `<your-node-id>` with your actual node id
 
 ## **Made with ❤️ by Morsyxbt**
