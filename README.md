@@ -42,92 +42,159 @@ You earn NEX Points by contributing compute and interacting with the Nexus ecosy
 ---
 
 ## --> Contribute via CLI
-### 1. Install Dependecies
-```bash
-sudo apt update & sudo apt upgrade -y
-sudo apt install screen curl build-essential pkg-config libssl-dev git-all -y
-sudo apt install protobuf-compiler -y
-sudo apt update
+# Install All Require Dependecies
+
+
 ```
-```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+```
+sudo apt install curl iptables build-essential git wget lz4 jq make cmake gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev screen ufw -y
+```
+
+* Install rustup
+
+```
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-```bash
+
+```
 source $HOME/.cargo/env
 ```
-```bash
-rustup target add riscv32i-unknown-none-elf
+
+Check version
+
+```
+rustc --version
 ```
 
----
 
-### 2. Run Prover
-**1- Start a screen to keep it running in the background**
-```bash
+<div align="center">
+
+#  Run Your Prover via CLI (Install via Script) 🍥
+
+</div>
+
+
+
+* Create screen session (Vps Only)
+
+```
 screen -S nexus
 ```
-**2- Install and run prover**
-```bash
+
+
+* Install the Cli
+
+```
 curl https://cli.nexus.xyz/ | sh
 ```
 
-**3- Run with an existing node ID**
+* Add nexus to your path
 
 ```
 source ~/.bashrc
 ```
+
+* **Start Your Prover**
+
 ```
-nexus-network start --node-id your-node-id
-```
-* Replace `your-node-id` with the one acquired in the next step.
-
----
-
-### 3. Create Node ID
-* ---> **Create Node ID via Web:**
-
-1- Go to https://app.nexus.xyz/nodes
-
-2- Click `Add Node`, click `Add CLI Node` and copy your `node-id` and paste in terminal
-
----
-
-### Earn more NEX? Run Multiple CLI Nodes:
-Now you can create more Node sessions by creating more screens. for example, to create the 2nd node:
-* Create 2nd screen:
-```
-screen -S nexus2
+nexus-network start --node-id <your-node-id>
 ```
 
-* Create 2nd node ID:
-```
-nexus-network register-node
-```
+Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
 
-* Run 2nd Node with 2nd Node ID:
-```
-nexus-network start --node-id your-node-id
-```
-* Replace `your-node-id` with the newly created one
 
-**Note**: Monitor your server's RAM and CPU via `htop` command to see how many nodes you can run
-```console
-# install htop
-sudo apt install htop
 
-# run htop
-htop
+<div align="center">
+
+#  Run Your Prover via CLI (Build from source) 🍥
+
+</div>
+
+
+* Create screen session (Vps Only)
+
+```
+screen -S nexus
 ```
 
----
+* Clone the Repository
 
-### 4. Manage your Node screen:
-* To minimze the screen: `CTRL+A+D`
 
-* To return to screen: `screen -r nexus`
+```
+git clone https://github.com/nexus-xyz/nexus-cli.git
+```
 
-* To kill screen: `screen -XS nexus quit`
+* Move & Build the release
 
----
+```
+cd ~/nexus-cli/clients/cli
+```
+
+```
+cargo build --release
+```
+
+
+🔺It will take some time here to compile it:
+
+
+* Add nexus to your path
+
+```
+source ~/.bashrc
+```
+
+
+* **Start Your Prover**
+
+```
+cargo run -r -- start --node-id <your-node-id>
+```
+
+Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
+
+
+
+
+![image](https://github.com/user-attachments/assets/a2c9bb37-e72b-4c42-8d7a-14554de938e5)
+
+
+Here we go: You have succussfully run your Nexus prover node🚀😙
+
+
+# Detach & Attach from screen
+
+`ctrl` `A` `D` To Detach from screen 
+
+* Attach with previous screen:
+
+
+`screen -ls` to know about the screens:
+
+Attach with this command:
+
+`screen -r Screen_Name` 
+
+
+
+* U can check Memory on your VPS by this command:
+
+```
+free -h
+```
+
+
+# Next Day start command for local PC:
+
+* Just run the start prover command:
+
+```
+nexus-network start --node-id <your-node-id>
+```
+
+Replace `<your-node-id>` with your actual node id from [Get your node ID 🛠](https://github.com/Mayankgg01/Nexus_Prover_Node_Guide/edit/main/README.md#get-your-node-id-)
 
 ## **Made with ❤️ by Morsyxbt**
