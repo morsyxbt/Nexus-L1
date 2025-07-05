@@ -78,7 +78,7 @@ rustc --version
 
 
 
-* Create screen session (Vps Only)
+* Create screen session
 
 ```
 screen -S nexus
@@ -114,7 +114,7 @@ Replace `<your-node-id>` with your actual node id
 </div>
 
 
-* Create screen session (Vps Only)
+* Create screen session
 
 ```
 screen -S nexus
