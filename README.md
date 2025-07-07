@@ -191,4 +191,4 @@ nexus-network start --node-id <your-node-id>
 
 Replace `<your-node-id>` with your actual node id
 
-## **Made with ❤️ by Morsyxbt**
+**Made with ❤️ by [Morsyxbt](https://x.com/morsyxbt)**
